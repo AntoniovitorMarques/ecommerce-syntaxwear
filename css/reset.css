@@ -7,8 +7,8 @@
 }
 
 /* Box sizing e remoção de margin padrão */
-*, 
-*::before, 
+*,
+*::before,
 *::after {
   box-sizing: border-box;
 }
@@ -19,8 +19,10 @@
 
 /* Defaults do HTML e body */
 html {
-  line-height: 1.15; /* 1 */
-  -webkit-text-size-adjust: 100%; /* 2 */
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
 }
 
 body {
@@ -42,15 +44,28 @@ a {
   text-decoration-skip-ink: auto;
 }
 
+ul,
+ol {
+  list-style: none;
+}
+
+
 /* Imagens e mídia */
-img, picture, video, canvas, svg {
+img,
+picture,
+video,
+canvas,
+svg {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
 /* Form controls inherit font */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
@@ -62,23 +77,45 @@ button {
 }
 
 /* Tornar elementos com role=button interativos */
-[role="button"] { cursor: pointer; }
+[role="button"] {
+  cursor: pointer;
+}
 
 /* Elementos semânticos */
-hr { height: 0; color: inherit; border: none; }
+hr {
+  height: 0;
+  color: inherit;
+  border: none;
+}
 
 /* Tornar o conteúdo oculto realmente não renderizado */
-[hidden] { display: none !important; }
+[hidden] {
+  display: none !important;
+}
 
 /* Tabelas */
-table { border-collapse: collapse; }
+table {
+  border-collapse: collapse;
+}
 
 /* Citações */
-blockquote, q { quotes: none; }
-blockquote::before, blockquote::after, q::before, q::after { content: ""; content: none; }
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: "";
+  content: none;
+}
 
 /* Abreviações */
-abbr[title] { text-decoration: underline dotted; }
+abbr[title] {
+  text-decoration: underline dotted;
+}
 
 /* Acessibilidade de foco (usa :focus-visible quando disponível) */
 :focus {
@@ -88,7 +125,10 @@ abbr[title] { text-decoration: underline dotted; }
 
 /* Preferências de usuário para reduzir movimento */
 @media (prefers-reduced-motion: reduce) {
-  *, *::before, *::after {
+
+  *,
+  *::before,
+  *::after {
     animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.001ms !important;
@@ -103,6 +143,9 @@ abbr[title] { text-decoration: underline dotted; }
   --root-font-size: 16px;
 }
 
-html { font-family: var(--root-font-family); font-size: var(--root-font-size); }
+html {
+  font-family: var(--root-font-family);
+  font-size: var(--root-font-size);
+}
 
 /* Fim do reset */
