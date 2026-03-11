@@ -29,7 +29,9 @@
 .nav-right a 
 {
     font-size: 1.25rem;
-}
+    color: #333333;
+
+;}
 
 .nav-center a:hover,
 .nav-right a:hover {
@@ -42,8 +44,7 @@
     align-items: center ;
 }
 
-.nav-right a img {
-    width: 20px;
+.nav-right img {
     height: 20px;
 }
 
